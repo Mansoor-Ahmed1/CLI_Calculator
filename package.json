@@ -2,10 +2,11 @@
   "dependencies": {
     "inquirer": "^9.2.20"
   },
-  "name": "cli_calculator_by_mansoor",
-  "version": "3.0.0",
+  "name": "mansoors_cli_calculator",
+  "version": "1.0.0",
   "main": "index.js",
   "type": "module",
+  "bin": "main.js",
   "devDependencies": {
     "@types/inquirer": "^9.0.7",
     "@types/node": "^20.12.8"
