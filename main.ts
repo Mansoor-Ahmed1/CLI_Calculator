@@ -2,6 +2,7 @@
 
 import inquirer from "inquirer";
 
+let output:number;
 let user_input = await inquirer.prompt(
     [
         {
@@ -24,19 +25,19 @@ let user_input = await inquirer.prompt(
 )
 
 if (user_input.operation == "Addition") {
-    let output:number = user_input.firstNum + user_input.secondNum
+    output = user_input.firstNum + user_input.secondNum
     console.log("The Sum of both numbers would be " + output)
 }
 else if (user_input.operation == "Multiplication") {
-    let output:number = user_input.firstNum * user_input.secondNum
+    output = user_input.firstNum * user_input.secondNum
     console.log("The Product of both numbers would be " + output)
 }
 else if (user_input.operation == "Subtraction") {
-    let output:number = user_input.firstNum - user_input.secondNum
+    output = user_input.firstNum - user_input.secondNum
     console.log("The Difference of both numbers would be " + output)
 }
 else if (user_input.operation == "Division") {
-    let output:number = user_input.firstNum / user_input.secondNum
+    output = user_input.firstNum / user_input.secondNum
     console.log("The Quotient of both numbers would be " + output)
 }
 else {

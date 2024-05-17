@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
+let output;
 let user_input = await inquirer.prompt([
     {
         "message": "Enter any Number",
@@ -19,19 +20,19 @@ let user_input = await inquirer.prompt([
     }
 ]);
 if (user_input.operation == "Addition") {
-    let output = user_input.firstNum + user_input.secondNum;
+    output = user_input.firstNum + user_input.secondNum;
     console.log("The Sum of both numbers would be " + output);
 }
 else if (user_input.operation == "Multiplication") {
-    let output = user_input.firstNum * user_input.secondNum;
+    output = user_input.firstNum * user_input.secondNum;
     console.log("The Product of both numbers would be " + output);
 }
 else if (user_input.operation == "Subtraction") {
-    let output = user_input.firstNum - user_input.secondNum;
+    output = user_input.firstNum - user_input.secondNum;
     console.log("The Difference of both numbers would be " + output);
 }
 else if (user_input.operation == "Division") {
-    let output = user_input.firstNum / user_input.secondNum;
+    output = user_input.firstNum / user_input.secondNum;
     console.log("The Quotient of both numbers would be " + output);
 }
 else {
